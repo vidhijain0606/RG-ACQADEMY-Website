@@ -1,0 +1,189 @@
+body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background:#073A4B;
+      color: #1A237E;
+    }
+    .navbar {
+      background: #073A4B;
+      color: #FF8900;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 32px;
+    }
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .nav-items {
+      display: flex;
+      gap: 28px;
+    }
+    .nav-link {
+      color:#FF8900;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .nav-link:hover {
+      color: #ffffff;
+    }
+    .hero-banner {
+
+      color:#FF8900;
+      padding: 70px 0 0px 0;
+      text-align: center;
+    }
+    .hero-title {
+      font-size: 2.6em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+    .hero-desc {
+      font-size: 1.2em;
+      color: #FFEBB7;
+      margin-bottom: 18px;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      color:#FF8900;
+      margin: 40px 0 24px 0;
+      letter-spacing: 2px;
+    }
+    /* Carousel */
+    .carousel-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      width: 700px;
+      max-width: 95vw;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+      position: relative;
+    }
+    .carousel-slide {
+      min-width: 100%;
+      transition: transform 0.5s;
+      padding: 36px 32px;
+      text-align: center;
+    }
+    .carousel-controls {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin: 0 18px;
+    }
+    .carousel-btn {
+      background: #FF8900;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      font-size: 1.3em;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .carousel-btn:hover {
+      background: #C62828;
+    }
+    /* Contact Form & Map */
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      background: #fff;
+      border-radius: 16px;
+      margin: 0 auto 40px auto;
+      max-width: 1000px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+      padding: 38px 24px;
+    }
+    .contact-form {
+      flex: 1 1 320px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .contact-form label {
+      font-weight: 600;
+      color: #073A4B;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #FF8900;
+      font-size: 1em;
+      outline: none;
+      resize: vertical;
+    }
+    .contact-form button {
+      background: #FF8900;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 0;
+      font-size: 1.1em;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 8px;
+      transition: background 0.2s;
+    }
+    .contact-form button:hover {
+      background: #C62828;
+    }
+    .contact-map {
+      flex: 1 1 320px;
+      min-width: 320px;
+      height: 300px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    }
+    /* Socials */
+    .contact-socials {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 28px;
+    }
+    .contact-socials a {
+      color: #FF8900;
+      font-size: 2em;
+      transition: color 0.2s;
+      text-decoration: none;
+    }
+    .contact-socials a:hover {
+      color: #C62828;
+    }
+    /* Footer */
+    .footer-bottom {
+      border-top: 1.5px solid #FF8900;
+      margin-top: 14px;
+      padding-top: 8px;
+      color: #ffff;
+      font-size: 0.85em;
+      text-align: center;
+    }
+    @media (max-width: 900px) {
+      .contact-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .carousel {
+        width: 98vw;
+      }
+    }

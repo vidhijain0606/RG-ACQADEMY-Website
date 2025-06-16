@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background:#073A4B;
+  color: #1A237E;
+}
+
+.navbar {
+  background: #073A4B;
+  color: #FF8900;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 32px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav-items {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-link {
+  color:#FF8900;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+/* BATCH */
+.section-title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color:#FF8900;
+  margin: 40px 0 24px 0;
+  letter-spacing: 2px;
+}
+.batch-section {
+  background: #073A4B;
+  padding: 48px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.batch-grid {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.batch-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  width: 270px;
+  padding: 28px 18px 20px 18px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+.batch-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.16);
+}
+
+.batch-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.batch-title {
+  color: #C62828;
+  font-size: 1.18rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.batch-desc {
+ color: #222;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+/* Footer */
+.footer-bottom {
+  border-top: 1.5px solid #FF8900;
+  margin-top: 14px;
+  padding-top: 8px;
+  color: #ffff;
+  font-size: 0.85em;
+  text-align: center;
+}

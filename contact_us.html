@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RG Academy Contact Us</title>
+  <link rel="stylesheet" href="contact_us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">RG ACADEMY</div>
+    <div class="nav-items">
+      <a href="explore.html" class="nav-link">Home</a>
+      <a href="info.html" class="nav-link">Information</a>
+      <a href="contact_us.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+    <!-- Explore Section with Carousel -->
+  <section>
+  <div class="section-title">Explore Our Features</div>
+  <div class="carousel-container">
+    <button class="carousel-btn" onclick="prevSlide()">&#8592;</button>
+    <div class="carousel" id="carousel">
+      <div class="carousel-slide" style="background: #F9F9F9;">
+        <h3 style="color:#C62828;">Tailored Learning for All</h3>
+        <p style="color:#073A4B;">No matter your level, our diverse programs have something for everyone.
+.</p>
+      </div>
+      <div class="carousel-slide" style="background: #FFF3E0;">
+        <h3 style="color:#C62828;">Expert Mentors</h3>
+        <p style="color:#073A4B;">Connect with experienced mentors for guidance and support.</p>
+      </div>
+      <div class="carousel-slide" style="background: #E3F2FD;">
+        <h3 style="color:#C62828;">Interactive Community</h3>
+        <p style="color:#073A4B;">Engage with peers, share knowledge, and grow together.</p>
+      </div>
+    </div>
+    <button class="carousel-btn" onclick="nextSlide()">&#8594;</button>
+  </div>
+  </section>
+    <!-- Hero Banner -->
+  <section class="hero-banner">
+    <div class="hero-title">Contact Us</div>
+    <div class="hero-desc">We’d love to hear from you! Reach out for queries, feedback, or just to say hello.</div>
+  </section>
+  <!-- Contact Us Section -->
+   <section>
+  <div class="section-title">Get in Touch</div>
+  <div class="contact-container">
+    <form class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required placeholder="Your Name">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required placeholder="How can we help you?"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-map">
+     <iframe
+  width="100%"
+  height="100%"
+  frameborder="0"
+  scrolling="no"
+  marginheight="0"
+  marginwidth="0"
+  src="https://www.openstreetmap.org/export/embed.html?bbox=72.966883%2C19.223026%2C72.967883%2C19.223626&amp;layer=mapnik&amp;marker=19.223326%2C72.967383"
+  style="border:1px solid #ccc"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  title="Our Location"></iframe>
+
+    </div>
+  </div>
+  <div class="contact-socials">
+    <a href="#" title="Facebook"><i class="fab fa-facebook-square"></i></a>
+    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  </div>
+  </section>
+ <!-- Footer  -->
+  <footer>
+  <div class="footer-bottom">
+    <span>&copy; 2025 RG Academy. All Rights Reserved.</span>
+  </div>
+</footer>
+<script src="contact_us.js"></script>
+</body>
+</html>
+<body>
+
+
