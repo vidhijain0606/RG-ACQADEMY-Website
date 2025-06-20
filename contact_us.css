@@ -1,11 +1,10 @@
 body {
       margin: 0;
       font-family: 'Arial', sans-serif;
-      background:#073A4B;
       color: #1A237E;
     }
     .navbar {
-      background: #073A4B;
+      background: #0000;
       color: #FF8900;
       display: flex;
       justify-content: space-between;
@@ -28,10 +27,10 @@ body {
       transition: color 0.2s;
     }
     .nav-link:hover {
-      color: #ffffff;
+      color: #000000;
     }
     .hero-banner {
-
+      background-color: #fcfcfc;
       color:#FF8900;
       padding: 70px 0 0px 0;
       text-align: center;
@@ -44,7 +43,7 @@ body {
     }
     .hero-desc {
       font-size: 1.2em;
-      color: #FFEBB7;
+      color:#073A4B;
       margin-bottom: 18px;
     }
     .section-title {
@@ -62,12 +61,12 @@ body {
       align-items: center;
       margin-bottom: 40px;
     }
-    .carousel {
+    #carousel {
       display: flex;
       overflow: hidden;
       width: 700px;
       max-width: 95vw;
-      background: #fff;
+      background: #073A4B;
       border-radius: 16px;
       box-shadow: 0 2px 16px rgba(0,0,0,0.10);
       position: relative;
@@ -104,7 +103,7 @@ body {
       flex-wrap: wrap;
       justify-content: center;
       gap: 40px;
-      background: #fff;
+      background:#073A4B;
       border-radius: 16px;
       margin: 0 auto 40px auto;
       max-width: 1000px;
@@ -119,7 +118,7 @@ body {
     }
     .contact-form label {
       font-weight: 600;
-      color: #073A4B;
+      color: #ffff;
     }
     .contact-form input,
     .contact-form textarea {

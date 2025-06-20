@@ -1,12 +1,12 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background:#073A4B;
+  background:#ffff;
   color: #1A237E;
 }
 
 .navbar {
-  background: #073A4B;
+  background: #000000;
   color: #FF8900;
   display: flex;
   justify-content: space-between;
@@ -45,7 +45,7 @@ body {
   letter-spacing: 2px;
 }
 .batch-section {
-  background: #073A4B;
+  background: #f9f9f9;
   padding: 48px 0 30px 0;
   display: flex;
   flex-direction: column;
@@ -60,7 +60,7 @@ body {
 }
 
 .batch-card {
-  background: #fff;
+  background: #073A4B;
   border-radius: 18px;
   box-shadow: 0 2px 16px rgba(0,0,0,0.10);
   width: 270px;
