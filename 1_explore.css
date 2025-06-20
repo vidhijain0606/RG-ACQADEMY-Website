@@ -1,4 +1,5 @@
-/* RESET */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +7,8 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgb(255, 255, 255);
-  color: #000000;
+  background-color: #ffffff;
+  color: #000;
   overflow-x: hidden;
 }
 
@@ -17,7 +18,6 @@ body {
   background-color: #000;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
-
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -27,21 +27,6 @@ body {
   margin: auto;
   position: relative;
 }
-
-.menu-items {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100vw;
-  background-color: #000;
-  transform: translateX(-150%);
-  transition: transform 0.5s ease-in-out;
-  padding: 100px 20px;
-  z-index: 999;
-}
-
 .checkbox {
   position: absolute;
   height: 32px;
@@ -52,7 +37,6 @@ body {
   cursor: pointer;
   z-index: 1000;
 }
-
 .hamburger-lines {
   height: 26px;
   width: 32px;
@@ -69,8 +53,37 @@ body {
   background: #fff;
   border-radius: 10px;
 }
+.logo {
+  color: orangered;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-left: auto;
+}
 
-/* Checkbox toggle */
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  background-color: #000;
+  transform: translateX(-150%);
+  transition: transform 0.5s ease-in-out;
+  padding: 100px 20px;
+  z-index: 999;
+}
+.menu-items li {
+  list-style: none;
+  margin: 20px 0;
+  text-align: center;
+}
+.menu-items a {
+  color: orangered;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
 .checkbox:checked ~ .menu-items {
   transform: translateX(0);
 }
@@ -87,18 +100,7 @@ body {
   display: none;
 }
 
-.menu-items li {
-  list-style: none;
-  margin: 20px 0;
-  text-align: center;
-}
-.menu-items a {
-  color: orangered;
-  font-size: 1.5rem;
-  text-decoration: none;
-}
-
-/* Swipe Navigation */
+/* SWIPE NAVIGATION */
 .list {
   display: flex;
   justify-content: center;
@@ -127,7 +129,7 @@ body {
   color: #000;
 }
 
-/* Carousel */
+/* CAROUSEL */
 .carousel-wrapper {
   display: flex;
   justify-content: center;
@@ -154,7 +156,7 @@ body {
   border: 2px solid white;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
   margin-top: 4px;
   padding: 2rem 2vw;
@@ -165,7 +167,6 @@ footer {
   justify-content: space-evenly;
   position: relative;
 }
-
 footer::before {
   content: "";
   position: absolute;
@@ -196,7 +197,7 @@ footer::before {
   min-width: 40px;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 @media screen and (max-width: 768px) {
   .nav-container {
     flex-direction: column;
