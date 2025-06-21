@@ -202,12 +202,12 @@ body {
   pointer-events: auto;
 }
 .modal-content {
-  background: linear-gradient(135deg, #073A4B 60%, #2196F3 100%);
+  background:white;
   border: 4px solid #FF8900;
   border-radius: 24px;
   box-shadow: 0 8px 40px rgba(26,35,126,0.22);
   padding: 48px 32px;
-  color: #fff;
+  color:#073A4B;
   width: 90vw;
   max-width: 400px;
   min-width: 220px;
@@ -248,13 +248,13 @@ body {
   }
 }
 #modalTitle {
-  color:#FFFFFF;
+  color:#073A4B;
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 10px;
 }
 #modalDesc {
-  color: #ffffff;
+  color:#073A4B;
   font-size: 1em;
 }
 .bead-cta {
