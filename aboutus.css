@@ -285,9 +285,10 @@ body {
   border-top: 1px solid #000000;
   margin-top: 14px;
   padding-top: 8px;
+  background: #073A4B;
   border-bottom: 1px solid #000000;
   text-align: center;
-  color: #FFFFFF;
+  color: #fffafa;
   font-size: 0.85em;
 }
 .ucmas-highlights {

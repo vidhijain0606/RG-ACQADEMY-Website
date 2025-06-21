@@ -5,7 +5,7 @@ body {
     }
     .navbar {
       background: #0000;
-      color: #FF8900;
+      color:#073A4B;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -21,7 +21,7 @@ body {
       gap: 28px;
     }
     .nav-link {
-      color:#FF8900;
+      color:#073A4B;
       text-decoration: none;
       font-weight: 600;
       transition: color 0.2s;
@@ -60,13 +60,13 @@ body {
       justify-content: center;
       align-items: center;
       margin-bottom: 40px;
+      
     }
     #carousel {
       display: flex;
       overflow: hidden;
       width: 700px;
       max-width: 95vw;
-      background: #073A4B;
       border-radius: 16px;
       box-shadow: 0 2px 16px rgba(0,0,0,0.10);
       position: relative;
@@ -76,6 +76,7 @@ body {
       transition: transform 0.5s;
       padding: 36px 32px;
       text-align: center;
+
     }
     .carousel-controls {
       display: flex;
@@ -84,7 +85,7 @@ body {
       margin: 0 18px;
     }
     .carousel-btn {
-      background: #FF8900;
+      background: #073A4B;
       color: #fff;
       border: none;
       border-radius: 50%;
@@ -95,7 +96,7 @@ body {
       transition: background 0.2s;
     }
     .carousel-btn:hover {
-      background: #C62828;
+      background: #000000;
     }
     /* Contact Form & Map */
     .contact-container {

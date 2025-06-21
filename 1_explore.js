@@ -1,49 +1,37 @@
-gsap.registerPlugin(CustomEase);
-CustomEase.create("easeMain", "0.65, 0.01, 0.05, 0.99");
 
-document.addEventListener("DOMContentLoaded", () => {
-  const carousel = document.getElementById("carousel");
-  const images = carousel.querySelectorAll("img");
-  const angle = 360 / images.length;
-  let rotation = 0;
+    const images = document.querySelectorAll('#activityImages img');
+    let current = 2;
 
-  images.forEach((img, i) => {
-    img.style.transform = `rotateY(${i * angle}deg) translateZ(200px)`;
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      current = (current - 1 + images.length) % images.length;
+      updateStack();
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      current = (current + 1) % images.length;
+      updateStack();
+    });
+
+    function updateStack() {
+      images.forEach((img, i) => {
+        img.style.zIndex = (i === current) ? 3 : (i === (current + 1) % 3 ? 2 : 1);
+        img.style.transform = (i === current) ? 'rotate(-3deg)' : (i === (current + 1) % 3 ? 'rotate(5deg)' : 'rotate(-10deg)');
+      });
+      document.getElementById('slideCounter').textContent = `${current + 1}/5`;
+    }
+
+    updateStack(); // Initial call
+  // Hide content when clicked on the nav bar 
+document.addEventListener("DOMContentLoaded", function () {
+  const menuCheckbox = document.getElementById("active");
+  const carousel = document.querySelector(".activity-container");
+
+  // Toggle visibility on checkbox change
+  menuCheckbox.addEventListener("change", function () {
+    if (menuCheckbox.checked) {
+      carousel.style.display = "none";
+    } else {
+      carousel.style.display = "flex"; // Use flex to restore original layout
+    }
   });
-
-  document.addEventListener("wheel", (e) => {
-    rotation += e.deltaY > 0 ? angle : -angle;
-    carousel.style.transform = `rotateY(${rotation}deg)`;
-  });
-
-  const list = document.querySelector(".list");
-  const swipe = new Hammer(document.querySelector(".swipe"));
-
-  function rotateForward() {
-    const items = list.querySelectorAll("li");
-    list.appendChild(items[0]);
-    updateClasses();
-  }
-
-  function rotateBackward() {
-    const items = list.querySelectorAll("li");
-    list.insertBefore(items[2], items[0]);
-    updateClasses();
-  }
-
-  function updateClasses() {
-    const items = list.querySelectorAll("li");
-    items.forEach(item => item.className = "");
-    items[0].classList.add("prev");
-    items[1].classList.add("act");
-    items[2].classList.add("next");
-  }
-
-  list.onclick = (e) => {
-    if (e.target.closest("li")?.classList.contains("next")) rotateForward();
-    if (e.target.closest("li")?.classList.contains("prev")) rotateBackward();
-  };
-
-  swipe.on("swipeleft", rotateForward);
-  swipe.on("swiperight", rotateBackward);
 });
